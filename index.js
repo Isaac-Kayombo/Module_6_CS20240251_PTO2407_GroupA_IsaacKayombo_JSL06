@@ -5,12 +5,12 @@ const menu = {
     Desserts: ["Tiramisu", "Cheesecake"]
 };
 
-// Function to display menu items by category
+// FUNCTION TO DISPLAY MENU ITEMS BY CATEGORY.
 function displayMenuItems(menu) {
-    // Getting the menu container element from the HTML
+    // GETTING MENU CONTAINER FROM HTML.
     const menuContainer = document.getElementById('menu');
 
-    // Looping through each category and its items in the menu object
+    // LOOPING THROUGH EACH CATEGORY AND ITEM IN MENU OBJECT.
     for (const [category, items] of Object.entries(menu)) {
 
         // CREATING h3 ELEMENT FOR EACH CATEGORY.
@@ -40,7 +40,7 @@ function displayMenuItems(menu) {
     }            
 }
 
-// Callback function for adding an item to the order
+// CALLBACK FUCTION FOR ADDING ITEM TO ORDER.
 function addToOrder(itemName) {
     // GETTING REFERENCES FOR ORDER ITEMS AND ORDER TOTAL IN HTML.
     const orderItemList = document.getElementById('order-items');
@@ -60,11 +60,11 @@ function addToOrder(itemName) {
     orderTotalElem.textContent = newTotal.toFixed(2); // UPDATES THE TOTAL PRICE WITH 2 DECIMAL PLACES
 }
 
-// Function to initialize the menu system
+// INITIALIZE THE MENU SYSTEM.
 function initMenuSystem(menu) {
     // DISPLAYING MENU ITEMS.
     displayMenuItems(menu);
 }
 
-// Start the menu system by calling the init function
+// START MENU SYSTEM.
 initMenuSystem(menu);
