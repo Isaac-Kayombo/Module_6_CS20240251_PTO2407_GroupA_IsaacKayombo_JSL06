@@ -12,7 +12,12 @@ function displayMenuItems(menu) {
 
     // Looping through each category and its items in the menu object
     for (const [category, items] of Object.entries(menu)) {
-        
+
+        // CREATING h3 ELEMENT FOR EACH CATEGORY.
+        const categoryTitle = document.createElement('h3');
+        categoryTitle.textContent = category;
+        // APPENDING categoryTitle TO MENU CONTAINER
+        menuContainer.appendChild(categoryTitle);
     }
         // Create an element to represent the category
 
