@@ -28,7 +28,7 @@ function displayMenuItems(menu) {
 
             // ATTACHING EVENT LISTENER TO LIST ITEM TO ADD TO ORDER.
             listItem.addEventListener('click', () => {
-
+                addToOrder(item);
             });
 
             // APPENDING LIST ITEM TO CATEGORY LIST.
