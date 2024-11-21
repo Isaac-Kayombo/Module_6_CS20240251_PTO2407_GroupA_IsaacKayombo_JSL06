@@ -50,18 +50,14 @@ function addToOrder(itemName) {
     const orderItem = document.createElement('li');
     orderItem.textContent = itemName;
     orderItemList.appendChild(orderItem); //APPENDING LIST ITEM TO THE ORDER ITEMS LIST
-    
-    // Get the order items list and the order total element from the HTML
 
-    // Create a list item for the order
+    // ASSUMATION THAT EACH ITEM COST 60
+    const itemPrice = 60;
 
-    // Set the text content of the list item to the item name
-
-    // Append the list item to the order items list
-
-    // Calculate and update the total price
-
-    // Update the text content of the order total element with the new total
+    // LOGIC FOR CALCULATING AND UPDATING THE TOTAL PRICE.
+    const currentTotal = parseFloat(orderTotalElem.textContent) || 0; // ENSURES WE START FROM 0 IF NO TOTAL IS ADDED.
+    const newTotal = currentTotal + itemPrice;
+    orderTotalElem.textContent = newTotal.toFixed(2); // UPDATES THE TOTAL PRICE WITH 2 DECIMAL PLACES
 }
 
 // Function to initialize the menu system
