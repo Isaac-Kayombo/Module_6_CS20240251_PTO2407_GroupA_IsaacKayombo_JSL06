@@ -16,11 +16,15 @@ function displayMenuItems(menu) {
         // CREATING h3 ELEMENT FOR EACH CATEGORY.
         const categoryTitle = document.createElement('h3');
         categoryTitle.textContent = category;
-        // APPENDING categoryTitle TO MENU CONTAINER.
-        menuContainer.appendChild(categoryTitle);
+        menuContainer.appendChild(categoryTitle); // APPENDING categoryTitle TO MENU CONTAINER.
 
         // CREATING LIST ELEMENT FOR ITEMS IN THE CATEGORY.
         const categoryList = document.createElement('ul');
+
+        // LOOPING THROUGH THE ITEMS IN THE CATEGORY TO CREATE LIST ITEMS.
+        items.forEach(item => {
+            
+        });
     }
         // Create an element to represent the category
 
