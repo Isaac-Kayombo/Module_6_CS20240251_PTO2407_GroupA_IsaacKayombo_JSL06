@@ -23,7 +23,13 @@ function displayMenuItems(menu) {
 
         // LOOPING THROUGH THE ITEMS IN THE CATEGORY TO CREATE LIST ITEMS.
         items.forEach(item => {
-            
+            const listItem = document.createElement('li');
+            listItem.textContent = item;
+
+            // ATTACHING EVENT LISTENER TO LIST ITEM TO ADD TO ORDER.
+            listItem.addEventListener('click', () => {
+                
+            });
         });
     }
         // Create an element to represent the category
