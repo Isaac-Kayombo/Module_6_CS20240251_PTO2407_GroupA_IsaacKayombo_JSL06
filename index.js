@@ -28,9 +28,15 @@ function displayMenuItems(menu) {
 
             // ATTACHING EVENT LISTENER TO LIST ITEM TO ADD TO ORDER.
             listItem.addEventListener('click', () => {
-                
+
             });
+
+            // APPENDING LIST ITEM TO CATEGORY LIST.
+            categoryList.appendChild(listItem);
         });
+
+        // APPENDING LIST TO MENU CONTAINER.
+        menuContainer.appendChild(categoryList);
     }
         // Create an element to represent the category
 
