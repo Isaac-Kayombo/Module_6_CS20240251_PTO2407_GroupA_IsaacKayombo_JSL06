@@ -37,28 +37,7 @@ function displayMenuItems(menu) {
 
         // APPENDING LIST TO MENU CONTAINER.
         menuContainer.appendChild(categoryList);
-    }
-        // Create an element to represent the category
-
-        // Set the text content of the category element to the category name
-
-        // Append the category element to the menu container
-
-        // Create an element to represent a list of items
-
-        // Append a list of items element to the menu container
-
-        // Loop through the items in the category and create list items
-
-            // Create a list item element
-
-            // Set the text content of the list item element to the item name
-
-            // Attach a click event listener to the list item to add it to the order
-
-            // Append the list item to the list of items
-
-            
+    }            
 }
 
 // Callback function for adding an item to the order
