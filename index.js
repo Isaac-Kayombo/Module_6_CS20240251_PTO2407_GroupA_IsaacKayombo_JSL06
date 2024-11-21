@@ -16,8 +16,11 @@ function displayMenuItems(menu) {
         // CREATING h3 ELEMENT FOR EACH CATEGORY.
         const categoryTitle = document.createElement('h3');
         categoryTitle.textContent = category;
-        // APPENDING categoryTitle TO MENU CONTAINER
+        // APPENDING categoryTitle TO MENU CONTAINER.
         menuContainer.appendChild(categoryTitle);
+
+        // CREATING LIST ELEMENT FOR ITEMS IN THE CATEGORY.
+        const categoryList = document.createElement('ul');
     }
         // Create an element to represent the category
 
