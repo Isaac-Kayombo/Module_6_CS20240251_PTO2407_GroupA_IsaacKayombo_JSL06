@@ -42,6 +42,9 @@ function displayMenuItems(menu) {
 
 // Callback function for adding an item to the order
 function addToOrder(itemName) {
+    // GETTING REFERENCES FOR ORDER ITEMS AND ORDER TOTAL IN HTML.
+    const orderItemList = document.getElementById('order-items');
+    const orderTotalElem = document.getElementById('order-total');
     // Get the order items list and the order total element from the HTML
 
     // Create a list item for the order
