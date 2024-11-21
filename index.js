@@ -45,6 +45,12 @@ function addToOrder(itemName) {
     // GETTING REFERENCES FOR ORDER ITEMS AND ORDER TOTAL IN HTML.
     const orderItemList = document.getElementById('order-items');
     const orderTotalElem = document.getElementById('order-total');
+
+    //CREATING A LIST ITEM FOR ORDER.
+    const orderItem = document.createElement('li');
+    orderItem.textContent = itemName;
+    orderItemList.appendChild(orderItem); //APPENDING LIST ITEM TO THE ORDER ITEMS LIST
+    
     // Get the order items list and the order total element from the HTML
 
     // Create a list item for the order
